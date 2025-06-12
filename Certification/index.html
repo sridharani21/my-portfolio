@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Certification Page</title>
+  <link rel="icon" href="./portfolio.png" type="image/png">
+  <style>
+    body {
+      font-family: "Trirong", serif;
+      margin: 0;
+      background-color: #D8BFD8;
+    }
+
+  
+    .navbar {
+      background-color: #8B008B;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 72px;
+  background: -webkit-linear-gradient(90deg,rgb(129, 89, 155) 0%,rgb(34, 39, 116) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    /* Card Box */
+    .card {
+      background-color: white;
+      border: 2px solid #d1b3ff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(106, 13, 173, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #610b6e;
+      margin-top: 0;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .certificate img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+      border: 2px solid #6a0dad;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .certificate a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #8B008B;
+      color: white;
+      text-decoration: none;
+      border-radius: 35px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .certificate a:hover {
+      background-color: #58009d;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Sridharani .</div>
+    <div><a href="../index.html" target="_self">Home</a></div>
+  </div>
+
+  <!-- Course Certifications -->
+  <div class="container">
+    <div class="section-title">Course Certifications</div>
+    <div class="grid">
+      
+      <div class="card">
+        <h3>Full Stack Development</h3>
+        <p>Covers the basic concepts of full stack development, including HTML, CSS, JavaScript, and an introduction to backend with Node.js.</p>
+        <div class="certificate">
+          <img src="./certificates/fullstack.jpeg" alt="Full Stack Certificate">
+          <a href="./certificates/fullstack.jpeg" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Power BI Workshop</h3>
+        <p>Introduced the basics of Power BI, including data import, visualization creation, and generating simple dashboards.</p>
+        <div class="certificate">
+          <img src="./certificates/power bi.jpeg" alt="Power BI Certificate">
+          <a href="./certificates/power bi.jpeg" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>JavaScript Bootcamp</h3>
+        <p>Learned the fundamentals of JavaScript, including variables, functions, loops, and basic DOM manipulation.</p>
+        <div class="certificate">
+          <img src="./certificates/javascript.jpeg" alt="JS Certificate">
+          <a href="./certificates/javascript.jpeg" download>Download</a>
+        </div>
+      </div>
+       <div class="card">
+        <h3>Figma Bootcamp</h3>
+        <p>Covered Figma basics such as designing user interfaces, creating wireframes, and collaborating on design projects.</p>
+        <div class="certificate">
+          <img src="./certificates/figma.jpeg" alt="JS Certificate">
+          <a href="./certificates/figma.jpeg" download>Download</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Internship Certifications -->
+  <div class="container">
+    <div class="section-title">Internship Certificates</div>
+    <div class="grid">
+      
+      <div class="card">
+        <h3>Web Development Internship</h3>
+        <p>Worked on building responsive websites and improving frontend designs using HTML, CSS, and JavaScript.</p>
+        <div class="certificate">
+          <img src="./certificates/web dev.jpeg" alt="Internship Web Dev">
+          <a href="./certificates/web dev.jpeg" style="margin-bottom: 0;" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity Internship</h3>
+        <p>Gained experience in threat detection and basic ethical hacking techniques using security tools.</p>
+        <div class="certificate">
+          <img src="./certificates/cyber.jpeg" alt="Cyber Internship">
+          <a href="./certificates/cyber.jpeg" download>Download</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Achievements -->
+  <div class="container" style="width: 750px;">
+    <div class="section-title">Achievements</div>
+    <div class="grid">
+      
+      <div class="card" id="certi">
+        <h3>Poster making</h3>
+        <img src="./certificates/pc.jpeg" style="width: 350px; height: 400px;">
+        <img  src="./certificates/poster.png" style="width: 350px; height: 400px;"> 
+        <p>Secured 3rd place in the poster-making competition at InnoThon, showcasing creativity and impactful visual design on a tech innovation theme.</p>
+      </div>
+
+     
+
+    </div>
+  </div>
+
+</body>
+</html>
